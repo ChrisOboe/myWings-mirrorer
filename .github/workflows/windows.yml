@@ -22,6 +22,7 @@ jobs:
       run: |
         cd src
         GOOS=windows GOARCH=amd64 go build -v
+        ls -alh
         
     - name: Do release
       uses: "marvinpinto/action-automatic-releases@latest"
@@ -29,4 +30,5 @@ jobs:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "latest"
         title: "Nightly Build"
-        files: wings-mirror.exe
+        files: |
+          *.exe
