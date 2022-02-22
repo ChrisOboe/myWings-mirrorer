@@ -29,7 +29,7 @@ Die myWings webseite, sowie App haben einige Limitierungen
       -h, --help         Show this help message
 
 ### Example
-myWings-mirrorer -u st123456 -p mypassword -m removeWatermarkPdf
+    myWings-mirrorer -u st123456 -p mypassword -m removeWatermarkPdf
 
 ### Where
 The files are saved in the directory/format given to filename.
